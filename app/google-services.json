@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32849419738",
+    "project_id": "androidtrinkspielplatz",
+    "storage_bucket": "androidtrinkspielplatz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32849419738:android:24498be31c8793291c74e3",
+        "android_client_info": {
+          "package_name": "com.charbelchougourou.trinkspielplatz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32849419738-f3elehvut273bji4qh0504ukd15d6vl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhAGwY9ciCLuyanHDxQNyIt7ynwrDvXCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32849419738-f3elehvut273bji4qh0504ukd15d6vl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

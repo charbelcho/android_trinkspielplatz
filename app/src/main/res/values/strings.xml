@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Trinkspielplatz</string>
+    <string name="search">Suchen</string>
+    <string name="next">Weiter</string>
+    <string name="anleitungen">Anleitungen</string>
+    <string name="ich_hab_noch_nie">Ich hab noch nie...</string>
+    <string name="wer_wuerde_eher">Wer würde eher...</string>
+    <string name="btn_nochnie">Ich hab noch nie!</string>
+    <string name="btn_eher">Wer würde eher?</string>
+    <string name="btn_wahrheit_pflicht">Wahrheit oder Pflicht?</string>
+    <string name="btn_hoeher_tiefer">Höher oder Tiefer?</string>
+    <string name="btn_bang">BANG!</string>
+    <string name="btn_shithead">Captain Shithead</string>
+    <string name="btn_pferderennen">Pferderennen</string>
+    <string name="btn_kingscup">King\'s Cup</string>
+    <string name="btn_werbinich">Wer bin ich?</string>
+    <string name="btn_busfahrer">Busfahrer</string>
+    <string name="btn_maexchen">Mäxchen</string>
+    <string name="btn_einhundert">100</string>
+    <string name="btn_wuerfel">Würfel</string>
+    <string name="btn_karten">Karten</string>
+    <string name="nochnie">Ich hab noch nie</string>
+    <string name="eher">Wer würde eher</string>
+    <string name="wahrheit_pflicht">Wahrheit oder Pflicht</string>
+    <string name="hoeher_tiefer">Höher oder Tiefer</string>
+    <string name="bang">BANG</string>
+    <string name="shithead">Captain Shithead</string>
+
+
+    <string-array name="nochnie">
+        <item>Ein Spieler liest die angezeigte Frage vor.
+            Alle Spieler, die die Frage mit "ja, habe ich schon mal"
+            beantworten können, trinken einen Schluck.
+        </item>
+    </string-array>
+
+    <string-array name="eher">
+        <item>
+            Ein Spieler liest die angezeigte Frage vor.
+            Die Spieler überlegen auf wen der Mitspieler
+            die Frage am ehesten zutrifft. Sie zeigen auf den
+            jeweiligen Spieler und dieser trinkt die Anzahl
+            an Schlücken von seinem Drink. Jeder kann auf
+            einen beliebigen Spieler zeigen.
+        </item>
+    </string-array>
+
+    <string-array name="wahrheit_pflicht">
+        <item>
+            Der Spieler an der Reihe entscheidet sich
+            zwischen Wahrheit oder Pflicht und tippt
+            auf das Feld. Beantwortet die Person die Frage oder
+            macht die Aufgabe, darf ein Schluck vergeben werden.
+            Wird es nicht gemacht tippt man auf den Bier-Button
+            und trinkt die angezeigte Anzahl an Schlucke.
+        </item>
+    </string-array>
+
+    <string-array name="hoeher_tiefer">
+        <item>
+            Der Spieler an der Reihe entscheidet, ob die nächste Karte
+            höher, gleich oder tiefer ist, als die angezeigte Karte.
+            Ist der Versuch falsch muss der Spieler einen Schluck trinken.
+            Er oder sie rät so oft, bis 3 Versuche in Folge richtig sind.
+            Dann ist der nächste Spieler dran. Wird bei einem Versuch
+            "Gleich" ausgewählt und dieser ist richtig, trinken alle
+            anderen Spieler ihr Getränk auf ex.
+        </item>
+    </string-array>
+
+    <string-array name="bang">
+        <item>
+            Der Spieler, der verliert trinkt die angezeigte Anzahl
+            an Schlucken. Der Spieler, der zu früh schießt, trinkt
+            die angezeigt Anzahl an Schlucken.
+        </item>
+    </string-array>
+    <string name="wahrheit">Wahrheit</string>
+    <string name="pflicht">Pflicht</string>
+    <string name="add">Hinzufügen</string>
+    <string name="description">mit Bier-Symbol</string>
+    <string name="hoeher_button">Button mit einem Aufwärts-Pfeil</string>
+    <string name="gleich_button">Button mit einem Ist-Gleich-Symbol</string>
+    <string name="tiefer_button">Button mit einem Abwärts-Symbol</string>
+    <string name="nochmal">Nochmal</string>
+    <string name="neustart">Neustart</string>
+    <string name="start">Start</string>
+    <string name="spieler1">Spieler 1</string>
+    <string name="spieler2">Spieler 2</string>
+    <string name="naechste_karte">Nächste Karte</string>
+    <string name="karte">Karte</string>
+    <string name="name">Name</string>
+    <string name="raum_id">RaumID</string>
+    <string name="ersteller">Ersteller</string>
+    <string name="placeholder">A</string>
+    <string name="bearbeiten">Bearb.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ich_hab_noch_nie"
+        android:title="Ich hab noch nie!"/>
+    <item android:id="@+id/wer_wuerde_eher"
+        android:title="Wer würde eher?"/>
+    <item android:id="@+id/wahrheit_pflicht"
+        android:title="Wahrheit oder Pflicht?"/>
+    <item android:id="@+id/hoeher_tiefer"
+        android:title="Höher oder Tiefer?"/>
+    <item android:id="@+id/bang"
+        android:title="BANG!"/>
+    <item android:id="@+id/shithead"
+        android:title="Captain Shithead"/>
+</menu>

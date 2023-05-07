@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.charbelchougourou.trinkspielplatz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trinkspielplatz">
+        <activity
+            android:name=".SocketTest"
+            android:exported="false" />
+        <activity
+            android:name=".AnleitungActivity"
+            android:exported="false" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5545282755961898~2825035975" />
+
+        <activity
+            android:name=".AddQuestionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NochnieActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EherActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WahrheitPflichtActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HoeherTieferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShitheadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PferderennenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KingsCupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WerbinichActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BusfahrerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MaexchenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EinhundertActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WuerfelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KartenActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
