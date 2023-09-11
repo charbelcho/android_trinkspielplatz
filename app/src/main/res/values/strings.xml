@@ -78,6 +78,8 @@
     <string name="wahrheit">Wahrheit</string>
     <string name="pflicht">Pflicht</string>
     <string name="add">Hinzufügen</string>
+    <string name="save">Speichern</string>
+    <string name="schliessen">Schließen</string>
     <string name="description">mit Bier-Symbol</string>
     <string name="hoeher_button">Button mit einem Aufwärts-Pfeil</string>
     <string name="gleich_button">Button mit einem Ist-Gleich-Symbol</string>
@@ -85,6 +87,7 @@
     <string name="nochmal">Nochmal</string>
     <string name="neustart">Neustart</string>
     <string name="start">Start</string>
+    <string name="spieler">Spieler</string>
     <string name="spieler1">Spieler 1</string>
     <string name="spieler2">Spieler 2</string>
     <string name="naechste_karte">Nächste Karte</string>
@@ -94,4 +97,23 @@
     <string name="ersteller">Ersteller</string>
     <string name="placeholder">A</string>
     <string name="bearbeiten">Bearb.</string>
+    <string name="herz">Herz</string>
+    <string name="karo">Karo</string>
+    <string name="kreuz">Kreuz</string>
+    <string name="pik">Pik</string>
+    <string name="zweiBisSechs">2-6</string>
+    <string name="siebenBisZehn">7-10</string>
+    <string name="bubeBisAss">Bube-Ass</string>
+    <string name="anzahlSchlucke">Anzahl Schlucke</string>
+    <string name="amZug">Am Zug:</string>
+    <string name="punkte">Punkte:</string>
+    <string name="aktuell">aktuell:</string>
+    <string name="naechster_spieler">Nächster Spieler</string>
+    <string name="wuerfeln">Würfeln</string>
+    <string name="alle_waehlen_entfernen">Alle wählen/\nentfernen</string>
+    <string name="wuerfelBeschreibung">Würfel</string>
+    <string name="tippe_wuerfeln">Tippe zum Würfeln</string>
+    <string name="anzahl_wuerfel">Anzahl Würfel</string>
+    <string name="stimmt">Stimmt</string>
+    <string name="stimmt_nicht">Stimmt nicht</string>
 </resources>

@@ -21,11 +21,11 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 public class WahrheitPflichtActivity extends AppCompatActivity {
     private AdView adView;
-    private Intent intent0;
     private List<String> wahrheitList;
     private List<String> pflichtList;
     private TextView textView;
@@ -37,7 +37,7 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     private boolean enablePflicht;
     private int i = 0;
     private int j = 0;
-    private int[] trinkanzahl = {3,4,5,6,7};
+    private final int[] trinkanzahl = {3,4,5,6,7};
     int randomAnzahl = 0;
 
     @Override
@@ -78,14 +78,12 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     }
 
     public boolean openAnleitungen(MenuItem item) {
-        intent0 = new Intent(this, AnleitungActivity.class);
-        switch (item.getItemId()) {
-            case R.id.anleitungen:
-                startActivity(intent0);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        Intent intent0 = new Intent(this, AnleitungActivity.class);
+        if (item.getItemId() == R.id.anleitungen) {
+            startActivity(intent0);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void initToolbars() {
@@ -95,7 +93,7 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     }
 
     public void initViews() {
-        button = findViewById(R.id.kingsCupNaechsteKarteButton);
+        button = findViewById(R.id.saveSpielerPferderennenButton);
         textView = findViewById(R.id.textViewWerBinIch1);
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView4);
@@ -105,18 +103,18 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     public void next() {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(enableWahrheit == true || enablePflicht == true) {
+                if(enableWahrheit || enablePflicht) {
                     i = new Random().nextInt(wahrheitList.size());
                     j = new Random().nextInt(pflichtList.size());
                     textView.setBackgroundResource(R.drawable.rounded_corner);
                     textView.setTextColor(Color.parseColor("#ffffff"));
                     textView.setTextSize(24);
-                    textView.setText("Wahrheit");
+                    textView.setText(R.string.wahrheit);
                     textView.setVisibility(View.VISIBLE);
                     textView2.setBackgroundResource(R.drawable.rounded_corner);
                     textView2.setTextColor(Color.parseColor("#ffffff"));
                     textView2.setTextSize(24);
-                    textView2.setText("Pflicht");
+                    textView2.setText(R.string.pflicht);
                     textView2.setVisibility(View.VISIBLE);
                     textView3.setVisibility(View.GONE);
                     enableWahrheit = false;
@@ -127,7 +125,7 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     }
 
     public void onClickWahrheit(View v) {
-        if(enablePflicht == false){
+        if(!enablePflicht){
             enableWahrheit = true;
             textView.setBackgroundColor(Color.parseColor("#ffffff"));
             textView.setTextColor(Color.parseColor("#000000"));
@@ -137,7 +135,7 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
     }
 
     public void onClickPflicht(View v) {
-        if(enableWahrheit == false) {
+        if(!enableWahrheit) {
             enablePflicht = true;
             textView2.setBackgroundColor(Color.parseColor("#ffffff"));
             textView2.setTextColor(Color.parseColor("#000000"));
@@ -150,12 +148,12 @@ public class WahrheitPflichtActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(enableWahrheit == true || enablePflicht == true) {
+                if(enableWahrheit || enablePflicht) {
                     randomAnzahl = trinkanzahl[new Random().nextInt(trinkanzahl.length)];
                     textView.setVisibility(View.GONE);
                     textView2.setVisibility(View.GONE);
                     textView3.setVisibility(View.VISIBLE);
-                    textView3.setText("Trinke " + randomAnzahl + " Schlucke!");
+                    textView3.setText(String.format(Locale.GERMANY, "Trinke %d Schlucke!", randomAnzahl));
                     enableWahrheit = true;
                 }
             }

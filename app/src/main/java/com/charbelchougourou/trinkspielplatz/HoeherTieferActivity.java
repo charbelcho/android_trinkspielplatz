@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,12 +23,6 @@ import java.util.List;
 
 public class HoeherTieferActivity extends AppCompatActivity {
     private AdView adView;
-    private Intent intent;
-    private Intent intent2;
-    private Intent intent3;
-    private Intent intent4;
-    private Intent intent5;
-    private Intent intent6;
     private TextView textView;
     private TextView textView2;
     private TextView textView3;
@@ -79,7 +72,7 @@ public class HoeherTieferActivity extends AppCompatActivity {
     }
 
     public boolean openAnleitungen(MenuItem item) {
-        intent = new Intent(this, AnleitungActivity.class);
+        Intent intent = new Intent(this, AnleitungActivity.class);
         switch (item.getItemId()) {
             case R.id.anleitungen:
                 startActivity(intent);
@@ -101,7 +94,7 @@ public class HoeherTieferActivity extends AppCompatActivity {
         textView3 = findViewById(R.id.textView7);
         textView4 = findViewById(R.id.textViewKingsCup2);
         imageView = findViewById(R.id.imageView);
-        hoeherButton = findViewById(R.id.kingsCupNaechsteKarteButton);
+        hoeherButton = findViewById(R.id.saveSpielerPferderennenButton);
         gleichButton = findViewById(R.id.button6);
         tieferButton = findViewById(R.id.button7);
         nochmalButton = findViewById(R.id.button9);
@@ -195,7 +188,7 @@ public class HoeherTieferActivity extends AppCompatActivity {
     }
 
     public int changeImage(int i) {
-        int resID = getResources().getIdentifier(deck.get(i).getName(), "drawable", getPackageName());
+        int resID = getResources().getIdentifier(deck.get(i).getCard(), "drawable", getPackageName());
         return resID;
     }
 

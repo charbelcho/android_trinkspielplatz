@@ -64,6 +64,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/linearLayoutVerdeckt"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
@@ -123,6 +124,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/back2" />
                     </LinearLayout>
 
@@ -133,6 +135,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/linearLayoutHerz"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
@@ -143,6 +146,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -150,6 +154,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -157,6 +162,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -164,6 +170,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -171,6 +178,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -178,6 +186,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -185,6 +194,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/herza" />
 
                         <ImageView
@@ -196,6 +206,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linearLayoutKreuz"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
@@ -206,6 +217,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -213,6 +225,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -220,6 +233,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -227,6 +241,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -234,6 +249,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -241,6 +257,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -248,6 +265,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/kreuza" />
 
                         <ImageView
@@ -259,6 +277,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linearLayoutKaro"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
@@ -269,6 +288,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -276,6 +296,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -283,6 +304,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -290,6 +312,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -297,6 +320,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -304,6 +328,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -311,6 +336,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/karoa" />
 
                         <ImageView
@@ -322,6 +348,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linearLayoutPik"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
@@ -332,6 +359,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -339,6 +367,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -346,6 +375,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -353,6 +383,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -360,6 +391,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -367,6 +399,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -374,6 +407,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+                            android:visibility="invisible"
                             ads:srcCompat="@drawable/pika" />
 
                         <ImageView
@@ -381,6 +415,7 @@
                             android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="5dp"
+
                             ads:srcCompat="@drawable/pika" />
                     </LinearLayout>
 
@@ -392,29 +427,71 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
                         android:layout_marginStart="10dp"
                         android:orientation="vertical">
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="450dp">
+                        <ImageView
+                            android:id="@+id/imageView41"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
 
-                            <ImageView
-                                android:id="@+id/imageView41"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginTop="5dp"
-                                ads:srcCompat="@drawable/back2" />
+                        <ImageView
+                            android:id="@+id/imageView42"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
 
-                        </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/imageView43"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView44"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView45"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView46"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView47"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            ads:srcCompat="@drawable/back2" />
+
+                        <ImageView
+                            android:id="@+id/imageView48"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="invisible" />
+
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/kingsCupNaechsteKarteButton"
+                    android:id="@+id/pferderennenNaechsteKarteButton"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"

@@ -80,7 +80,7 @@ public class BusfahrerActivity extends AppCompatActivity {
     }
 
     public void initViews() {
-        button = findViewById(R.id.kingsCupNaechsteKarteButton);
+        button = findViewById(R.id.saveSpielerPferderennenButton);
         textView = findViewById(R.id.textView2);
     }
 

@@ -50,10 +50,6 @@ public class MainActivity extends AppCompatActivity {
     private Intent intent13;
     private Intent intent14;
 
-
-    private String serverAdress = "localhost";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         redirectToGame();
         MobileAds.initialize(this, initializationStatus -> {
         });
+
+        SocketClient socketClient = new SocketClient();
+        socketClient.connect();
 
         adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

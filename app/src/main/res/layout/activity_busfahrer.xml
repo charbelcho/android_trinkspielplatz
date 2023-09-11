@@ -80,7 +80,7 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/kingsCupNaechsteKarteButton"
+                    android:id="@+id/saveSpielerPferderennenButton"
                     style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"

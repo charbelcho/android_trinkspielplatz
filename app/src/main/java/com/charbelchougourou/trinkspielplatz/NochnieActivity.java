@@ -40,6 +40,8 @@ public class NochnieActivity extends AppCompatActivity {
         next();
         initToolbars();
         textView.setText(nochnieList.get(0));
+        SocketClient socketClient = new SocketClient();
+        socketClient.connect();
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -79,7 +81,7 @@ public class NochnieActivity extends AppCompatActivity {
     }
 
     public void initViews() {
-        button = findViewById(R.id.kingsCupNaechsteKarteButton);
+        button = findViewById(R.id.saveSpielerPferderennenButton);
         textView = findViewById(R.id.textView2);
     }
 

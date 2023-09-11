@@ -68,35 +68,7 @@ public class AddQuestionActivity extends AppCompatActivity {
 
     private void initToolbars() {
         Toolbar toolbar = findViewById(R.id.toolbar);
-        Intent intent = new Intent(this, NochnieActivity.class);
-        Intent intent2 = new Intent(this, EherActivity.class);
-        Intent intent3 = new Intent(this, WahrheitPflichtActivity.class);
         setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                PopupMenu popup = new PopupMenu(AddQuestionActivity.this, view);
-                popup.inflate(R.menu.popup_menu);
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem menuItem) {
-                        switch (menuItem.getItemId()) {
-                            case R.id.ich_hab_noch_nie:
-                                startActivity(intent);
-                                return true;
-                            case R.id.wer_wuerde_eher:
-                                startActivity(intent2);
-                                return true;
-                            case R.id.wahrheit_pflicht:
-                                startActivity(intent3);
-                                return true;
-                        }
-                        return true;
-                    }
-                });
-                popup.show();
-            }
-        });
     }
 
     @Override

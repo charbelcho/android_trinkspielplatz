@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -107,7 +106,6 @@ public class BangActivity extends AppCompatActivity {
 
     public void startCountdown() {
         randomTime = new Random().nextInt(5001);
-        System.out.println(randomTime);
         timer = new CountDownTimer(3999, 1000) {
             @Override
             public void onTick(long l) {
@@ -168,8 +166,7 @@ public class BangActivity extends AppCompatActivity {
     }
 
     public void showZuschnellDialog(int zuschnell) {
-        final Dialog dialog = new Dialog(BangActivity.this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        final Dialog dialog=new Dialog(this,android.R.style.Theme_Light_NoTitleBar_Fullscreen);
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.zuschnell_dialog);
 
@@ -180,7 +177,7 @@ public class BangActivity extends AppCompatActivity {
         textView4 = dialog.findViewById(R.id.textView14);
         textView4.setText("Spieler "+ zuschnell + " hat zu schnell geschossen und trinkt " + randomAnzahl + " Schluck/e!");
         closeDialogBtn1 = dialog.findViewById(R.id.button14);
-        closeDialogBtn2 = dialog.findViewById(R.id.kingsCupNaechsteKarteButton);
+        closeDialogBtn2 = dialog.findViewById(R.id.saveSpielerPferderennenButton);
         closeDialogBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -197,8 +194,7 @@ public class BangActivity extends AppCompatActivity {
     }
 
     public void showVerliererDialog(int verlierer) {
-        final Dialog dialog = new Dialog(BangActivity.this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        final Dialog dialog=new Dialog(this,android.R.style.Theme_Light_NoTitleBar_Fullscreen);
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.verlierer_dialog);
 
@@ -209,7 +205,7 @@ public class BangActivity extends AppCompatActivity {
         textView4 = dialog.findViewById(R.id.textView14);
         textView4.setText("Spieler "+ verlierer + " hat verloren und trinkt " + randomAnzahl + " Schluck/e!");
         closeDialogBtn1 = dialog.findViewById(R.id.button14);
-        closeDialogBtn2 = dialog.findViewById(R.id.kingsCupNaechsteKarteButton);
+        closeDialogBtn2 = dialog.findViewById(R.id.saveSpielerPferderennenButton);
         timeSpieler1 = 0;
         timeSpieler2 = 0;
         closeDialogBtn1.setOnClickListener(new View.OnClickListener() {

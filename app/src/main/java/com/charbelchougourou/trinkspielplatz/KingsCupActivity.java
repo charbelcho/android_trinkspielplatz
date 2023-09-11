@@ -1,5 +1,7 @@
 package com.charbelchougourou.trinkspielplatz;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,17 +27,15 @@ import java.util.Random;
 
 public class KingsCupActivity extends AppCompatActivity {
     private AdView adView;
-    private Intent intent0;
+    private AlertDialog.Builder builder;
     private Button naechsteKarteButton;
     private ImageView imageView;
-    private Card firstCard;
-    private List<Card> deck = new ArrayList<>();
-    private List<Card> randomDeck;
+    private final List<Card> deck = new ArrayList<>();
     private TextView textView1;
     private TextView textView2;
     private int i = 0;
 
-    private int[] trinkanzahl = {2,3,4,5};
+    private final int[] trinkanzahl = {2,3,4,5};
 
     private int randomAnzahl = 0;
 
@@ -43,11 +43,12 @@ public class KingsCupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kingscup);
-        firstCard = new Card("back2", 0, "back");
-        randomDeck = Deck.randomizeListOfCards(Deck.createDeck());
+        Card firstCard = new Card(0, "back2", 0, "back", "");
+        List<Card> randomDeck = Deck.randomizeListOfCards(Deck.createDeck());
         deck.add(firstCard);
         deck.addAll(randomDeck);
         initViews();
+        openStartKingsCupDialog();
         next();
         initToolbars();
         setKingsCupText();
@@ -78,14 +79,12 @@ public class KingsCupActivity extends AppCompatActivity {
     }
 
     public boolean openAnleitungen(MenuItem item) {
-        intent0 = new Intent(this, AnleitungActivity.class);
-        switch (item.getItemId()) {
-            case R.id.anleitungen:
-                startActivity(intent0);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        Intent intent0 = new Intent(this, AnleitungActivity.class);
+        if (item.getItemId() == R.id.anleitungen) {
+            startActivity(intent0);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void initToolbars() {
@@ -95,17 +94,34 @@ public class KingsCupActivity extends AppCompatActivity {
     }
 
     public void initViews() {
+        builder = new AlertDialog.Builder(this, R.style.AlertDialogTheme);
         textView1 = findViewById(R.id.textViewKingsCup1);
         textView2 = findViewById(R.id.textViewKingsCup2);
         imageView = findViewById(R.id.imageView);
-        naechsteKarteButton = findViewById(R.id.kingsCupNaechsteKarteButton);
+        naechsteKarteButton = findViewById(R.id.saveSpielerPferderennenButton);
     }
+
+    public void openStartKingsCupDialog() {
+        builder.setCancelable(true)
+                .setMessage("Ihr braucht zum Spielen ein weiteres Glas als King's Cup")
+                .setPositiveButton("Start", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = builder.create();
+        //Setting the title manually
+        alert.setTitle("Spielstart");
+        alert.show();
+        alert.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.blue));
+    }
+
 
     public void next(){
         naechsteKarteButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 i++;
-                //textView1.setText("Verbleibende Karten: "+ (52 - i));
                 textView1.setText(String.format("Verbleibende Karten: %s", deck.size() - 1 - i));
                 imageView.setImageResource(changeImage(i));
                 setKingsCupText();
@@ -178,7 +194,7 @@ public class KingsCupActivity extends AppCompatActivity {
     }
 
     public int changeImage(int i) {
-        int resID = getResources().getIdentifier(deck.get(i).getName(), "drawable", getPackageName());
+        int resID = getResources().getIdentifier(deck.get(i).getCard(), "drawable", getPackageName());
         return resID;
     }
 

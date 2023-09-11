@@ -38,7 +38,7 @@ public class ShitheadActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shithead);
-        firstCard = new Card("back2", 0, "back");
+        firstCard = new Card(0, "back2", 0, "back", "");
         randomDeck = Deck.randomizeListOfCards(Deck.createDeck());
         deck.add(firstCard);
         deck.addAll(randomDeck);
@@ -90,7 +90,7 @@ public class ShitheadActivity extends AppCompatActivity {
         textView = findViewById(R.id.textViewKingsCup1);
         textView2 = findViewById(R.id.textViewKingsCup2);
         imageView = findViewById(R.id.imageView);
-        naechsteKarteButton = findViewById(R.id.kingsCupNaechsteKarteButton);
+        naechsteKarteButton = findViewById(R.id.saveSpielerPferderennenButton);
     }
 
     public void next(){
@@ -138,7 +138,7 @@ public class ShitheadActivity extends AppCompatActivity {
     }
 
     public int changeImage(int i) {
-        int resID = getResources().getIdentifier(deck.get(i).getName(), "drawable", getPackageName());
+        int resID = getResources().getIdentifier(deck.get(i).getCard(), "drawable", getPackageName());
         return resID;
     }
 

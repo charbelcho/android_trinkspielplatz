@@ -1,26 +1,38 @@
 package com.charbelchougourou.trinkspielplatz;
 
 public class Card {
-    private String name;
+    private int id;
+    private String card;
     private int value;
     private String farbe;
+    private String zeichen;
 
     public Card() {
 
     }
 
-    public Card(String name, int value, String farbe) {
-        this.name = name;
+    public Card(int id, String card, int value, String farbe, String zeichen) {
+        this.id = id;
+        this.card = card;
         this.value = value;
         this.farbe = farbe;
+        this.zeichen = zeichen;
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getCard() {
+        return card;
+    }
+
+    public void setCard(String card) {
+        this.card = card;
     }
 
     public int getValue() {
@@ -38,4 +50,14 @@ public class Card {
     public void setFarbe(String farbe) {
         this.farbe = farbe;
     }
+
+    public String getZeichen() {
+        return zeichen;
+    }
+
+    public void setZeichen(String zeichen) {
+        this.zeichen = zeichen;
+    }
+
+
 }
